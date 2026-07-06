@@ -1,0 +1,15 @@
+-- طباعة العبارة المطلوبة في الكونسول (Console) أول ما يشتغل السكربت
+print("نيمار عمك")
+warn("نيمار عمك") -- تظهر باللون الأصفر لتكون واضحة
+
+-- تشغيل السكربت من الرابط الخاص بك
+local success, err = pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/comg92-stack/0oo/refs/heads/main/1.txt"))()
+end)
+
+-- التحقق إذا اشتغل بدون مشاكل
+if success then
+    print("تم تحميل السكربت بنجاح: نيمار عمك")
+else
+    warn("حدث خطأ أثناء تحميل السكربت: ", err)
+end
